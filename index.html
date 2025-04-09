@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gato Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="login-box">
+                <form action="/ruta-del-servidor" method="POST">
+                    <h2>Login</h2>
+                    
+                    <!-- Email -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div>
+
+                    <!-- Recordar y Olvidó contraseña -->
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" id="remember-me"> Recordarme
+                        </label>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                    <!-- Enlace para registro -->
+                    <div class="register-link">
+                        <p>¿No tienes una cuenta? <a href="#">Registrar</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Scripts de Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
